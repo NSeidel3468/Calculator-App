@@ -63,4 +63,15 @@ public class MainActivity extends AppCompatActivity {
 
         numberSumTV.setText("" + quotient);
     }
+
+    public void findSquare(View view){
+        EditText number1ET = findViewById(R.id.num1ET);
+        EditText number2ET = findViewById(R.id.num2ET);
+        TextView numberSumTV = findViewById(R.id.resultTV);
+
+        int num1 = Integer.parseInt((number1ET.getText().toString()));
+        int square = num1 * num1;
+        number2ET.setText(num1);
+        numberSumTV.setText("" + square);
+    }
 }
